@@ -1,3 +1,1 @@
-
-rootProject.name = "Kotlin Template Advent of Code"
-
+rootProject.name = "Kotlin Advent of Code"

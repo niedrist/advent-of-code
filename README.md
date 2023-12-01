@@ -1,15 +1,28 @@
-# Advent of Code Template for Kotlin
-This is a template for anyone who wants to solve the [Advent of Code](https://adventofcode.com/) challenges in Kotlin. It provides a simple way to run your code and measure the execution time. Additionally, it comes with some nice utility functions to simplify the parsing of the input data.
+# Advent of Code in Kotlin
+This repository contains some solutions for [Advent of Code](https://adventofcode.com/) challenges in Kotlin. If you want to use the same structure, head over to the [template repository](https://github.com/niedrist/advent-of-code-template-kotlin).
 
-## How to use
-1. Clone this repository
-2. Copy/paste the input data for each day into the `src/main/resources` directory ([Example](src/main/resources/example.txt))
-3. Create a new package/class for every daily puzzle you want to solve in the `src/main/kotlin` directory ([Example](src/main/kotlin/example/Example.kt))
-   1. Make sure to extend the `BasicDay` class
-   2. You can use the utility functions in [FileReader](src/main/kotlin/util/FileReader.kt) to simplify the parsing of the input data
-4. Have fun
+                         .!,            .!,
+                        ~ O ~          ~ O ~
+                   .    ' O `  .-^-.   ' O `
+                 _.|,_   | |  / .-. \   | |
+                  '|`   .|_|.| (-` ) | .|_|.
+                  / \ ___)_(_|__`-'__|__)_(______
+                 /`,o\)_______________________o_(
+                /_* ~_\[___]___[___]___[___[_[\`-.
+                / o .'\[_]___[___]___[___]_[___)`-)
+               /_,~' *_\_]                 [_[(  (
+               /`. *  *\_]                 [___\ _\
+              /   `~. o \]      ;( ( ;     [_[_]`-'
+             /_ *    `~,_\    (( )( ;(;    [___]
+             /   o  *  ~'\   /\ /\ /\ /\   [_[_]
+            / *    .~~'  o\  ||_||_||_||   [___]
+           /_,.~~'`    *  _\_||_||_||_||___[_[_]_
+           /`~..  o        \:::::::::::::::::::::\
+          / *   `'~..   *   \:::::::::::::::::::::\
+         /_     o    ``~~.,,_\====================='
+         /  *      *     ..~'\ 
+        /*    o   _..~~`'*   o\ 
+        `-.__.~'`'   *   ___.-'
+              ":-------:"
+                \_____/
 
-## Execution time measurement
-The execution time of your code is measured automatically if you implement your solution as `BasicDay` (follow the instructions above). The result will be printed to the console after the execution of your code.
-
-This can be especially useful if you want or need to improve the performance of your solution. Some puzzles can be quite challenging in terms of performance. Even if your solution is theoretically correct, the actual execution time may exceed the [heath death of the universe](https://en.wikipedia.org/wiki/Heat_death_of_the_universe).
