@@ -8,7 +8,7 @@ val d = FileReader.asStrings("2023/day01.txt")
 fun main() = Day01.run()
 
 object Day01 : BasicDay() {
-    override fun part1() = d.sumOf { line -> "${line.first { it.isDigit()  }}${line.last { it.isDigit() }}".toInt()}
+    override fun part1() = d.sumOf { line -> "${line.first { it.isDigit() }}${line.last { it.isDigit() }}".toInt() }
 
     override fun part2() = d.sumOf { line ->
         val indexFirstString = numberMap.map {
@@ -20,7 +20,7 @@ object Day01 : BasicDay() {
         }.filter { it.first != -1 }
 
         val indexFirstDigit = line.indexOfFirst { it.isDigit() }
-        val indexLastDigit = line.indexOfLast { it.isDigit()}
+        val indexLastDigit = line.indexOfLast { it.isDigit() }
 
         val first = if (indexFirstString.isNotEmpty() && indexFirstDigit > indexFirstString.minOf { it.first }) {
             indexFirstString.minBy { it.first }.second
