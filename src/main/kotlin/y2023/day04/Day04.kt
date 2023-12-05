@@ -18,8 +18,7 @@ object Day04 : BasicDay() {
 
     override fun part2(): Int {
         d.forEach { card ->
-            val matching = card.matching()
-            for (i in 1..matching) {
+            for (i in 1..card.matching()) {
                 d.find { it.id == card.id + i }?.let { it.times += 1 * card.times }
             }
         }
