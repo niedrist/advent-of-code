@@ -4,8 +4,8 @@ import BasicDay
 import util.FileReader
 
 val players = FileReader.asStrings("2023/day07.txt").map {
-    val splitted = it.split(' ')
-    Player(splitted[0].toCharArray().toList(), splitted[1].toInt())
+    val (hand, bid) = it.split(' ')
+    Player(hand.toCharArray().toList(), bid.toInt())
 }
 
 fun main() = Day07.run()
